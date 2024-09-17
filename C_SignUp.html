@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sign Up | Bus Booking System</title>
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" href="Common.css">
+		<link rel="stylesheet" href="ABC.css">
+	</head>
+
+	<body class="parallax">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="A_Home.html">Home</a></li>
+					<li><a href="D_Schedules.html">Schedules</a></li>
+					<li><a href="E_Booking.php">Booking</a></li>
+					<li><a href="F_SpecialTours.php">Special Tours</a></li>
+					<li><a href="I_ContactUs.html">Contact Us</a></li>
+					<li><a href="J_About.html">About Us</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="C_SignUp.html">Sign Up</a></li>
+					<li><a href="B_Login.html">Log In</a></li>
+				</ul>
+			</nav>
+
+			<a href="G_Profile.php">
+			<img class="profilepic"  src="profile.jpg" alt="profile">
+			</a>
+
+			<div><img style="width:20%;" src="logo.png" alt="logo"></div>
+			<h1 class="topic">Bus Booking System</h1>
+			<p>Book your bus tickets online with ease</p>
+		</header>
+
+        <main>
+            <h1 class="heading">Sign Up</h1>
+            <div class="menu">
+                <form method="POST" action="process_signup.php" align="center" onsubmit="return checkPassword()">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern="/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/v" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password"  onsubmit ="return checkPassword()"required><br><br>
+
+                    <label for="contactNo">Contact Number:</label>
+                    <input type="number" id="contactNo" name="contactNo" required><br><br><br>
+
+                    <input type="submit" value="Sign Up" name="signupBtn" style="font-size: 2vw;">
+                </form>
+                <p><small><a href="B_Login.html">Already have an account?</a></small></p>
+            </div>
+        </main>
+
+		<script>
+
+			function checkPassword() {
+				var password = document.getElementById("password").value;
+				var confirmPassword = document.getElementById("confirm_password").value;
+				
+				if (password.length < 8) {
+					alert("Password must be at least 8 characters long.");
+					return false;
+				}
+
+				var passwordStrength = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+				if (!password.match(passwordStrength)) {
+					alert(
+					"Password must contain at least one lowercase letter, one uppercase letter, and one digit."
+					);
+					return false;
+				}
+				// Validate password confirmation
+				if (password !== confirmPassword) {
+					alert("Passwords do not match.");
+					return false;
+				}
+				
+				return true;
+			}
+		</script>
+
+        <footer>
+			<hr>
+			<centre>
+				<div><img style="width:10%; margin-top: 3vh;" src="logo.png" alt="logo"></div><br>
+				<a href="A_Home.html">Home | </a>
+				<a href="J_About.html">About Us | </a>
+				<a href="I_ContactUs.html">Contact Us | </a>
+				<a href="H_Feedback.php">FAQ</a><br><br>
+				<p>Bus Booking System &copy; 2023</p>
+			</centre>
+		</footer>
+    </body>
+</html>  

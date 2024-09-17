@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login | Bus Booking System</title>
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" href="Common.css">
+		<link rel="stylesheet" href="ABC.css">
+	</head>
+
+	<body class="parallax">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="A_Home.html">Home</a></li>
+					<li><a href="D_Schedules.html">Schedules</a></li>
+					<li><a href="E_Booking.php">Booking</a></li>
+					<li><a href="F_SpecialTours.php">Special Tours</a></li>
+					<li><a href="I_ContactUs.html">Contact Us</a></li>
+					<li><a href="J_About.html">About Us</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="C_SignUp.html">Sign Up</a></li>
+					<li><a href="B_Login.html">Log In</a></li>
+				</ul>
+			</nav>
+
+			<a href="G_Profile.php">
+			<img class="profilepic"  src="profile.jpg" alt="profile">
+			</a>
+
+			<div><img style="width:20%;" src="logo.png" alt="logo"></div>
+			<h1 class="topic">Bus Booking System</h1>
+			<p>Book your bus tickets online with ease</p>
+		</header>
+
+        <main>
+            <centre>
+            <h1 class="heading">Log In</h1>
+            <div class="menu" style="height: 65vh;">
+                <form action="process_login.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br><br>
+
+                    <input type="submit" value="Log In" style="font-size: 2vw;">
+                </form>
+                <p style="margin-top: 10%; text-align: left;"><small><a href="C_SignUp.html">Don't have an account?</a></small></p>
+                </centre>
+            </div>
+        </main>
+
+        <footer>
+			<hr>
+			<centre>
+				<div><img style="width:10%; margin-top: 3vh;" src="logo.png" alt="logo"></div><br>
+				<a href="A_Home.html">Home | </a>
+				<a href="J_About.html">About Us | </a>
+				<a href="I_ContactUs.html">Contact Us | </a>
+				<a href="H_Feedback.php">FAQ</a><br><br>
+				<p>Bus Booking System &copy; 2023</p>
+			</centre>
+		</footer>
+    </body>
+</html>        

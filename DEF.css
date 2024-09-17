@@ -1,0 +1,128 @@
+label, input, select{
+    font-size: 2vw;
+    margin: 2.5vw;
+}
+
+.sptours {
+    width: 80%;
+    background-color: rgb(3, 62, 90);
+    color: #fff;
+    margin-right: auto;
+    padding: 5%;
+    max-width: 1100px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.pay {
+    width: 10vw;
+    height: 15vh;
+    left: 0;
+    margin-right: 5vw;
+}
+
+.pay:hover{
+    background-color:grey;
+}   
+
+#container{
+    display: block;
+    background-color:  #033753;
+    padding: 50px;
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+    margin: auto;
+}
+  
+.f_routes_container{
+    display:flex;
+    padding:20px;
+    border:30px solid rgb(76, 145, 176);
+    background-color: white;
+    margin:20px;
+    margin-left: 6vw;
+    width: 30vw;
+}
+  
+.f_routes_container button, #search, .calc{
+    display:block;
+    margin-left:96px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #033753;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+#search, .calc{
+    background-color: black;
+    border: 1px #fff solid;
+}
+#search:hover .calc:hover{
+    background-color: rgb(52, 147, 160);
+}
+
+.f_routes_container span{
+    margin:auto;
+}
+
+.subheading{
+    color: #ffffff;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 4vw;
+    margin-top: 10vh;
+}
+
+#offer-id{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.offer1, .offer2, .offer3{
+    width: 30vw;
+    display: inline-block;
+}
+
+.offer{
+    width: 20vw;
+    height: 30vh;
+}
+
+#prev-button, #next-button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    background-color: rgb(12, 149, 191);
+    border: none;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#next-button{
+    right: 0;
+}
+#prev-button{
+    left: 0;
+}
+#prev-button:hover, #next-button:hover{
+    background-color: lightskyblue;
+}
+
+.sptours{
+    margin-left: auto;
+}
